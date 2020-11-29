@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Задание 1</h5>
+                        <div class="colorBox">              
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        <div class="color"></div>
+                        </div> 
+                      <p class="card-text"> Даны несколько div элементов на html.
+                        По первому нажатию на каждый div 
+                        он перекрашивается зеленым цветом, 
+                        при повторном нажатии перекрашивается 
+                        обратно и так далее каждый клик 
+                        происходит чередование цвета. </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <div class="card-body">
+                      <h5 class="card-title">Задание 2</h5>
+                      <p class="card-text"> Реализовать счётчик нажатий на 
+                        кнопку: Дана кнопка внутри неё 
+                        записана цифра. При клике на 
+                        кнопку – её значение должно 
+                        увеличиваться на единицу. </p>
+                        <button type="button" id = "counter" class="btn btn-outline-success">Вы нажали 0 раз(а)</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <h5>Задание 3</h5>
+                     Реализовать возможность добавления комментариев. 
+                    Комментарий вводится в textarea.
+                    Комментарий добавляется по нажатию на кнопку Комментировать.
+                    При добавлении комменария отображаются: аватар автора (пока у всех комментарие одинаковый), 
+                    имя автора (пока у всех комментарие одинаковое), дата добавления комментария (текущая дата), 
+                    текст комментария (тот, что был введен в textarea).
+                <ul class="list-group" id = commentsList>              
+                </ul>
+                <form id = "commentForm">
+                    <div class="form-group">
+                      <label for="comment">Comment</label>
+                      <textarea id = "input" class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <h5>Задание 4</h5>
+                <p>Дан массив с объектами, где каждый объект 
+                описывает книгу: артикул, автор, название, описание.
+                Сформировать функцию, которой передаётся массив 
+                книг, и которая создаст и внесёт все 
+                необходимые html элементы, стили, и содержание 
+                для отображения всей информации о книгах в виду таблицы.
+                </p>
+                <div id = "booksTable"></div>
+            </div>  
+        </div>
+    </div>  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+</body>
+</html>

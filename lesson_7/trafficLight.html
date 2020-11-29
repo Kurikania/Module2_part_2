@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            margin: 0 auto;
+            background-color: black;
+            height: 600px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .circle {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class = "box">
+            <div class = "circle"></div>
+            <div class = "circle"></div>
+            <div class = "circle"></div>
+        </div>
+    </main>
+    <script>
+        
+        const circles = document.getElementsByClassName("circle")
+        let index = 0;
+
+        function changeLightsRed() {
+                circles[2].style.backgroundColor = "gray";
+                circles[1].style.backgroundColor = "gray";
+                circles[0].style.backgroundColor = "red";
+                
+            };
+            function changeLightsYellow() {
+                circles[0].style.backgroundColor = "gray";
+                circles[2].style.backgroundColor = "gray";
+                circles[1].style.backgroundColor = "yellow";
+               
+            };
+            function changeLightsGreen() {
+                circles[0].style.backgroundColor = "gray";
+                circles[1].style.backgroundColor = "gray";
+                circles[2].style.backgroundColor = "green";
+                 
+            };
+
+        function changeLights() {
+            setTimeout(changeLightsRed, 1000)
+            setTimeout(changeLightsYellow, 2000)
+            setTimeout(changeLightsGreen, 3000)
+        }
+        setInterval(changeLights, 6000 )
+
+
+    </script>
+</body>
+</html>

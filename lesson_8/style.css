@@ -1,0 +1,31 @@
+ul, li {
+    list-style: none;
+}
+
+body {
+    padding: 40px;
+}
+
+.img-responsive {
+    width: 80px;
+}
+.colorBox{
+    display: flex;
+}
+.mic-info {
+    font-size: 0.8rem;
+}
+
+.color {
+    margin-left: 2px;
+    height: 100px;
+    background-color: gray;
+    width: 33%;
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+}
+
+.green {
+    background-color: forestgreen;
+}
+

@@ -1,0 +1,223 @@
+/*css reset*/
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+   
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: sans-serif;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+      text-decoration: none;
+      color: black
+  }
+
+  /*Main styles*/
+
+  
+
+
+.parallax {
+	perspective: 1px;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.layer-main {
+	transform: translateZ(0);
+}
+
+.layer-back {
+	background-image: url("./img/1297.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.layer-back2 {
+	background-image: url("./img/christmas-background-with-stars-and-bokeh-lights.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+h2 {
+  color: darkred;
+  margin-top: 30px;
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 20px rgba(255, 255, 255, 0.596);
+}
+
+h3 {
+  color: darkred;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+
+#shopping {
+  display: flex;
+  padding: 30px;
+
+  justify-content: space-around;
+  align-content: unset;
+}
+
+.card {
+   box-shadow: inset 0px -8px 8px 0px rgba(0,0,0,0.5),
+              inset 0px 8px 8px 0px rgba(0,0,0,0.5);
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 300px;
+    background-color: white;
+    border: 1px sold gray;
+}
+
+.card img {
+  width: 60%;
+  height: auto;
+}
+
+/* background-image: url('./img/1297.jpg'); */
+
+
+/* Time styles */
+
+.time {
+    height: 150px;
+    box-shadow: inset 0px -8px 8px 0px rgba(0,0,0,0.5),
+                 inset 0px 8px 8px 0px rgba(0,0,0,0.5);
+    color: #d99c3b;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .time div {
+    display: flex;
+    padding-top: 5px;
+  }
+  
+  
+  
+  .watches {
+    font-size: 3rem;
+  }
+  
+  .timeName {
+    padding: 0 14px;
+    font-size: 0.8rem;
+    align-self: center;
+  }
+
+  /* lightrope */
+
+
+  .lightrope {
+    background-color: rgb(12, 2, 31);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px -8px 8px 0px rgba(0,0,0,0.5),
+                 inset 0px 8px 8px 0px rgba(0,0,0,0.5);
+  }
+
+  .circle {
+    display: flex;
+    margin: 1rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: rgb(171,170,201);
+    background: radial-gradient(circle, rgba(108, 107, 136, 0.1) 0%, 
+                                        rgba(63, 63, 78, 0.2) 20%, 
+                                        rgba(4, 4, 39, 0.726) 35%,
+                                        rgba(24, 11, 11, 0.824) 100%);
+    position: relative;
+    transition: 1s all linear;
+  }
+
+  .circle:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 17.5px;
+    top: -15px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: rgb(68, 53, 73);
+    border-radius: 2px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(97, 81, 107);
+  }
+  
+  .circle:after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 30px;
+    position: absolute;
+    width: 70px;
+    height: 18.6666666667px;
+    border-bottom: solid #222 2px;
+    border-radius: 50%;
+  }
+  
+  .circle:last-child::after {
+    content: '';
+    position: absolute;
+    border: none;
+  }
+
+
+  .bright {
+    box-shadow: 0 0 20px 10px #fffffd8f;
+  }
