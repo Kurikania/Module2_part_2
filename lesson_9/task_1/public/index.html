@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f58b749f86.js" crossorigin="anonymous"></script>
+    <style>
+        td{
+            border: 1px solid  darkcyan;
+            text-align: center;
+            width: 30px;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+        td:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -29,11 +42,39 @@
                 </div>
             </div>
          </div>     
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Задание 4</h5>
+                        <p>
+                            Написать функцию генерации поля n x n (значение n - аргумент функции), 
+                            в ячейки рандомно спрятать несколько призов. 
+                            Пользователю дается 3 попытки найти их - по нажатию на ячейку либо открывается приз 
+                            (иконка, изменения цвета и тд), либо иконка, сообщающая, что приза нет. 
+                            Количество оставшихся попыток выводим рядом с игровым полем.
+                        </p>
+                        <p>У вас осталось попыток <span id = "triesLeft"></span></p> 
+                        <form id = "numInput">
+                            <div class="form-group">
+                              <label for="number">Введите число</label>
+                              <input type="number" class="form-control" id="number">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Нарисовать поле</button>
+                          </form>
+                          <div id = "gamefield" class = "mt-5">
+
+                          </div>
+                    </div>
+                </div>
+            </div>
+         </div>     
     </div>
     <script type = "module" src="./app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
 <script src="./graph.js"></script>
+<script src="./game.js"></script>
 </body>
 </html>
