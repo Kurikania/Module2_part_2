@@ -43,10 +43,15 @@
                 circles[0].style.backgroundColor = "red";
                 
             };
+            function changeLightsYellowRed() {
+                circles[0].style.backgroundColor = "red";
+                circles[1].style.backgroundColor = "yellow";
+               
+            };
             function changeLightsYellow() {
                 circles[0].style.backgroundColor = "gray";
-                circles[2].style.backgroundColor = "gray";
                 circles[1].style.backgroundColor = "yellow";
+                circles[2].style.backgroundColor = "gray"
                
             };
             function changeLightsGreen() {
@@ -57,11 +62,12 @@
             };
 
         function changeLights() {
-            setTimeout(changeLightsRed, 1000)
-            setTimeout(changeLightsYellow, 2000)
-            setTimeout(changeLightsGreen, 3000)
+            setTimeout(changeLightsRed, 0)
+            setTimeout(changeLightsYellowRed, 1000)
+            setTimeout(changeLightsGreen, 2000)
+            setTimeout(changeLightsYellow, 3000)
         }
-        setInterval(changeLights, 6000 )
+        setInterval(changeLights, 5000 )
 
 
     </script>
